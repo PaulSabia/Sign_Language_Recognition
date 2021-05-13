@@ -29,12 +29,29 @@ Afin de classifier nos images, nous utilisons un modèle **RandomForestClassifie
 
 ![](Images/StratifiedKFlod.png)
 
-Nous obtenons un précision de **97%**, voici la matrice de confusion :
+Les modèles de forêts d'arbres décisionnels présentent des performances très moyennes avec une précision de **58** et **36%**. La méthode avec StratifiedKFold obtient un écart assez important de précision par rapport train_test_split(). Nous nous tournerons donc vers un réseau de neuronnes afin d'obtenir de meilleurs resultats.
 
-![](Images/cm.png)
+## Le Modèle ANN
+
+Nous formons un modèle assez classique avec des 2 couches Denses, 3 Dropout afin d'éviter l'overfiting, et une dernière Dense avec une activation "softmax" afin d'obtenir la probabilité de chacunes des **26 classes**.
+
+Nous rajoutons également un callback **Checkpoint** afin de conserver le meilleurs modèle au cours de l'entrainement que présentera la plus faible perte sur les données de validations. 
+
+![](Images/model.png)
+
+Nous obtenons une précision de **70,9%**. Nous garderons donc ce modèle pour notre application de détection de language des signes.
+
+**Accuracy :**
+
+![](Images/accuracy.png)
+
+**Loss :**
+
+![](Images/loss.png)
+
 
 Le notebook est disponible [ici](classification_model.ipynb)
 
 ## Application
 
-Pour tester le modèle : [app.py](app.py)
+Pour tester l'application de detection de language des signes : [app.py](app.py)
