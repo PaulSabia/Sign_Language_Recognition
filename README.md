@@ -54,4 +54,4 @@ Le notebook est disponible [ici](classification_model.ipynb)
 
 ## Application
 
-Pour tester l'application de detection de language des signes : [app.py](app.py)
+**Pour tester l'application de detection de language des signes : [app.py](app.py)**
