@@ -37,7 +37,7 @@ Nous formons un modèle assez classique avec des 2 couches Denses, 3 Dropout afi
 
 Nous rajoutons également un callback **Checkpoint** afin de conserver le meilleurs modèle au cours de l'entrainement que présentera la plus faible perte sur les données de validations. 
 
-![](Images/model.png)
+![](Images/model.PNG)
 
 Nous obtenons une précision de **70,9%**. Nous garderons donc ce modèle pour notre application de détection de language des signes.
 
