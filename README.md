@@ -33,7 +33,7 @@ Les modèles de forêts d'arbres décisionnels présentent des performances trè
 
 ## Le Modèle ANN
 
-Nous formons un modèle assez classique avec des 2 couches Denses, 3 Dropout afin d'éviter l'overfiting, et une dernière Dense avec une activation "softmax" afin d'obtenir la probabilité de chacunes des **26 classes**.
+Nous formerons notre modèle grâce à la librairie **Keras**. Il sera composé de 2 couches `Denses`, 3 `Dropout` afin d'éviter l'overfiting, et une dernière `Dense` avec une activation `softmax` afin d'obtenir la probabilité de chacunes des **26 classes**.
 
 Nous rajoutons également un callback **Checkpoint** afin de conserver le meilleurs modèle au cours de l'entrainement que présentera la plus faible perte sur les données de validations. 
 
