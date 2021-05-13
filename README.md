@@ -43,11 +43,11 @@ Nous obtenons une précision de **70,9%**. Nous garderons donc ce modèle pour n
 
 **Accuracy :**
 
-![](Images/accuracy.png)
+![](Images/accuracy.PNG)
 
 **Loss :**
 
-![](Images/loss.png)
+![](Images/loss.PNG)
 
 
 Le notebook est disponible [ici](classification_model.ipynb)
